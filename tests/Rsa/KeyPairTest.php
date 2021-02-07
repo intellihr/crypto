@@ -35,7 +35,7 @@ class KeyPairTest extends TestCase
 
         (new KeyPair())->generate(
             $privateKeyPath,
-            $publicKeyPath,
+            $publicKeyPath
         );
 
         $this->assertStringStartsWith('-----BEGIN PRIVATE KEY-----', file_get_contents($privateKeyPath));
